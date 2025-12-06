@@ -15,6 +15,10 @@ const allowedOrigins = [
   "http://localhost:5174",
 ];
 
+console.log("Allowed Origins:", allowedOrigins);
+
+app.use(express.json());
+
 app.use(
   cors({
     origin: (origin, callback) => {
@@ -29,7 +33,7 @@ app.use(
   })
 );
 
-app.use(express.json());
+
 
 app.get("/", (req, res) => {
   res.json({ status: "ok", env: config.env });
