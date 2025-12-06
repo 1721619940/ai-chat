@@ -1,0 +1,77 @@
+# ---------------------------------------------------------
+# Node.js / Backend
+# ---------------------------------------------------------
+server/node_modules/
+server/dist/
+server/build/
+server/.cache/
+server/.tmp/
+
+# Logs
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+server/pnpm-debug.log*
+server/debug.log
+server/logs/
+server/*.log
+
+# Environment files (do NOT commit secrets)
+server/.env
+server/.env.*
+!server/.env.example      # Keep example file
+
+# PM2 logs
+server/pids
+server/*.pid
+server/*.seed
+server/*.pid.lock
+
+# ---------------------------------------------------------
+# React / Vite Frontend
+# ---------------------------------------------------------
+client/node_modules/
+client/dist/
+client/build/
+client/.vite/
+
+# Local environment variables
+client/.env
+client/.env.*
+!client/.env.example       # Safe template
+
+# Vite cache
+client/.vite-cache/
+client/**/*.tsbuildinfo
+
+# ---------------------------------------------------------
+# Docker
+# ---------------------------------------------------------
+docker-compose.override.yml
+docker-data/
+*.dockerfile.swp
+
+# ---------------------------------------------------------
+# System junk
+# ---------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------
+# Editor / IDE
+# ---------------------------------------------------------
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ---------------------------------------------------------
+# Misc
+# ---------------------------------------------------------
+*.log
+*.tmp
+*.cache
