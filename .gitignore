@@ -18,7 +18,7 @@ server/*.log
 
 # Environment files (do NOT commit secrets)
 server/.env
-server/.env.*
+
 !server/.env.example      # Keep example file
 
 # PM2 logs
@@ -37,7 +37,6 @@ client/.vite/
 
 # Local environment variables
 client/.env
-client/.env.*
 !client/.env.example       # Safe template
 
 # Vite cache
